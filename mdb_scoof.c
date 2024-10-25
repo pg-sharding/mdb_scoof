@@ -6,6 +6,8 @@
 #include "access/detoast.h"
 #include "utils/lsyscache.h"
 
+PG_MODULE_MAGIC;
+
 PG_FUNCTION_INFO_V1(mdb_column_toast_chunk_id);
 
 /*

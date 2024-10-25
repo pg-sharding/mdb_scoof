@@ -4,11 +4,11 @@
 \echo Use "CREATE EXTENSION mdb_scoof" to load this file. \quit
 
 --
--- bt_index_check()
+-- mdb_column_toast_chunk_id()
 --
 CREATE FUNCTION mdb_column_toast_chunk_id(
     VARIADIC "any"
 )
-RETURNS VOID
-AS 'MODULE_PATHNAME', 'bt_index_check'
+RETURNS OID
+AS 'MODULE_PATHNAME', 'mdb_column_toast_chunk_id'
 LANGUAGE C STRICT PARALLEL SAFE;
