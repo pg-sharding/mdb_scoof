@@ -1,0 +1,5 @@
+# mdb_scoofk extension
+comment = 'Functions that are just nice to have'
+default_version = '1.4.8.1'
+module_pathname = '$libdir/mdb_scoof'
+relocatable = true
